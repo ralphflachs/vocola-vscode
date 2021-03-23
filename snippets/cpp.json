@@ -45,6 +45,22 @@
 		],
 		"description": "Function declaration"
 	},
+	"Array": {
+		"prefix": "array",
+		"body": [
+			"std::array<${1:type}> ${2:variable} = {${3:values}};"
+		]
+	},
+	"vector": {
+		"prefix": "vector",
+		"body": [
+			"std::vector
+			
+			long 
+			+ thisshort 
+			<${1:type}> ${2:variable} = {${3:values}};"
+		]
+	},
 	"Default": {		
 		"prefix": "default-snippet",
 		"body": [

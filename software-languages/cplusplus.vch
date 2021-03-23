@@ -154,6 +154,14 @@ cpp | h:
     );
     <declaration> = selectSnippet($1);
 
+    <dataStructures> := (
+        array = "array"
+        |vector this
+        long Altthiselse= "vector"
+    );
+    <dataStructures> = "std::" $1;
+    declare <dataStructures> = selectSnippet($1);
+
     <algorithmSnippets> := (
         stack = "stack"
         |Header = "generic-header"
