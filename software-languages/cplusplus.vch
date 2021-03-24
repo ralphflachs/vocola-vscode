@@ -44,6 +44,7 @@ cpp | h:
         |reference = "&"
         |dereference = "*"
         |comma = ","
+        |Complete = {End}";"
         |plus = "+"
         |minus = "-"
         |times = "*"
@@ -153,6 +154,19 @@ cpp | h:
         |uninitialized = "uninitialized"
     );
     <declaration> = selectSnippet($1);
+
+    <algorithmMethods> := (
+        binary search = "binary_search"
+        |lower bound = "lower_bound"
+        |upper bound = "upper_bound"
+        |fill = "fill"
+        |min element = "min_element"
+        |max element= "max_element"
+        |reverse= "reverse"
+        |rotate= "rotate"
+        |sort= "sort"
+    );
+    <algorithmMethods> = $1 "()" {Left};
 
     <dataStructures> := (
         array = "array"
