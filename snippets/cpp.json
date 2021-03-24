@@ -54,7 +54,7 @@
 	"vector": {
 		"prefix": "vector",
 		"body": [			
-			"<${1:type}> ${2:variable} = {${3:values}};"
+			"std::vector<${1:type}> ${2:variable} = {${3:values}};"
 		]
 	},
 	"Default": {		
