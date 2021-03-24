@@ -156,8 +156,7 @@ cpp | h:
 
     <dataStructures> := (
         array = "array"
-        |vector this
-        long Altthiselse= "vector"
+        |vector = "vector"
     );
     <dataStructures> = "std::" $1;
     declare <dataStructures> = selectSnippet($1);
