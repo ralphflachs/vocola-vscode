@@ -1,4 +1,5 @@
 # Voice commands for sourcetree
+include edit.vch;
 
 # view
 previous = {Alt+f}{Esc}{Ctrl+Tab};
