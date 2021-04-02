@@ -40,6 +40,7 @@ Visual Studio Code:
     Panel = {Ctrl+j};
     search = {Ctrl+Shift+f};    
     go = {Enter};
+    preview = {Ctrl+k}v;
     
     # Go
     line 1..9 [1..9 [1..9]]  = {Ctrl+g} $1 $2 $3  {Enter};
