@@ -1,0 +1,1 @@
+selectSnippet(value) := $value {Ctrl+Space} Wait(500) {Tab};

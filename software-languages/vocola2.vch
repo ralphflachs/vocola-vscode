@@ -1,5 +1,7 @@
 # vocola2 language support for visual studio code
 # requires the following code snippet extension:
+include common.vch;
+
 vcl | vch:
     <snippet> := (
         key command = "key-command"        
@@ -7,7 +9,7 @@ vcl | vch:
         |substitution = "substitution"
         |variable = "variable"
     );
-    <snippet> = {Ctrl+Space} Wait(200) $1 {Tab};
+    <snippet> = selectSnippet($1);
 
     # symbols
     <symbol> := (

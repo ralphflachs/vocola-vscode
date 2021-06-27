@@ -2,8 +2,9 @@
 # Requires C++ compiler: https://code.visualstudio.com/docs/cpp/config-mingw
 # Requires extensions: https://marketplace.visualstudio.com/items?itemName=hars.CppSnippets
 # extending snippets: https://code.visualstudio.com/docs/editor/userdefinedsnippets
-cpp | h:
-    selectSnippet(value) := $value {Ctrl+Space} Wait(500) {Tab};
+include common.vch;
+
+cpp | h:    
 
     <primitiveTypes> := (
         integer = "int"

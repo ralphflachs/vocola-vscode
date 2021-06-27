@@ -7,7 +7,7 @@ include websites/googlechat.vch;
 Exit = {Ctrl+Shift+w};
 Cancel = {Esc};
 Find = {Ctrl+f};
-full screen = {Alt+Space}x;
+full screen = {Alt+Space} Wait(200) x;
 
 # bookmarks
 [show] bookmarks = {Ctrl+Shift+o};

@@ -1,9 +1,9 @@
 # the following supports Python code snippets in Visual Studio code
 # Requires Python extension: https://marketplace.visualstudio.com/items?itemName=ms-python.python
 # Set snippets to top of suggestions, in settings.json: "editor.snippetSuggestions": "top"
-py:
-    selectSnippetPython(value) := $value {Ctrl+Space} Wait(900) {Tab};
+include common.vch;
 
+py:    
     <scalerTypeCastPython> := (
         integer = "int"        
         |bool = "bool"
@@ -77,7 +77,7 @@ py:
         |else = "else"        
         |if else = "if/else"                                        
     );
-    <conditionsPython> = selectSnippetPython($1);
+    <conditionsPython> = selectSnippet($1);
 
     <loopsPython> := (
         for loop = "for"
@@ -85,7 +85,7 @@ py:
         |for else = "for/else"
         |while else = "while/else"
     );
-    <loopsPython> = selectSnippetPython($1);
+    <loopsPython> = selectSnippet($1);
     
     <functionTypePython> := (
         void = "void"
@@ -97,7 +97,7 @@ py:
     <functionPython> := (
         function = "def"
     );
-    <functionPython> = selectSnippetPython($1);
+    <functionPython> = selectSnippet($1);
 
     <classIdentifierrsPython> := (
         public = "public"
@@ -120,9 +120,9 @@ py:
         |static method= "def(static class method)"
         |abstract method= "def(abstract class method)"
     );
-    <oopPython> = selectSnippetPython($1);
+    <oopPython> = selectSnippet($1);
 
     <basicSnippetsPython> := (
         main = "main"
     );
-    <basicSnippetsPython> = selectSnippetPython($1);
+    <basicSnippetsPython> = selectSnippet($1);
